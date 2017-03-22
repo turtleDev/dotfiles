@@ -1,0 +1,84 @@
+!ROFI Color theme
+! Use extended color scheme
+rofi.color-enabled:                  true
+! Color scheme for normal row
+rofi.color-normal:                   #14161F, #B0E670, #14161F, #B0E670, #14161F
+! Color scheme for the window
+rofi.color-window:                   #14161F, #14161F, #14161F
+! use a 'ghost' seperator
+rofi.separator-style:                none
+! make it translucent
+rofi.opacity:                        80
+! we dont want spacing
+rofi.line-margin:                    0
+rofi.bw:                             0
+! make it big
+rofi.width:                          768
+! layout
+rofi.fullscreen:                     true
+rofi.padding:                        150
+rofi.lines:                          20
+rofi.columns:                        1
+! use URxvt
+rofi.terminal:                       urxvt
+
+! URxvt Rice
+URxvt.font:                xft:monospace:pixelsize=13
+URxvt.boldFont:            xft:monospace:pixelsize=13:bold
+URxvt.italicFont:          xft:monospace:pixelsize=13:italic
+URxvt.boldItalicFont:      xft:monospace:pixelsize=13:bold:italic
+URxvt.letterSpace:         -1
+
+! Base16 Monokai
+! Scheme: Wimer Hazenberg (http://www.monokai.nl)
+
+URxvt*background:                     #272822
+URxvt*foreground:                     #f8f8f2
+URxvt*cursorColor:                    #f8f8f2
+
+URxvt*scrollColor:                    #f8f8f2
+URxvt*highlightColor:                 #49483e
+URxvt*highlightTextColor:             #a59f85
+
+URxvt*color0:                         #272822
+URxvt*color1:                         #f92672
+URxvt*color2:                         #a6e22e
+URxvt*color3:                         #f4bf75
+URxvt*color4:                         #66d9ef
+URxvt*color5:                         #ae81ff
+URxvt*color6:                         #a1efe4
+URxvt*color7:                         #f8f8f2
+URxvt*color8:                         #75715e
+URxvt*color9:                         #f92672
+URxvt*color10:                        #a6e22e
+URxvt*color11:                        #f4bf75
+URxvt*color12:                        #66d9ef
+URxvt*color13:                        #ae81ff
+URxvt*color14:                        #a1efe4
+URxvt*color15:                        #f9f8f5
+
+URxvt*color16:                        #fd971f
+URxvt*color17:                        #cc6633
+URxvt*color18:                        #383830
+URxvt*color19:                        #49483e
+URxvt*color20:                        #a59f85
+URxvt*color21:                        #f5f4f1
+
+
+URxvt.internalBorder:      0
+URxvt.externalBorder:      0
+! urxvt.borderLess: true
+
+URxvt.scrollBar:           false
+
+URxvt*fading:              30
+
+URxvt.perl-ext-common:     matcher,fullscreen,resize-font
+ 
+URxvt.keysym.F11:          perl:fullscreen:switch
+
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger:  C-Up
+
+! get rid of that god awful ISO mode
+URxvt*iso14755: False
