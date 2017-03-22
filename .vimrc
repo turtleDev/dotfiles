@@ -15,6 +15,9 @@ Plugin 'flazz/vim-colorschemes'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'mattn/emmet-vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+" Plugin 'othree/yajs.vim'
 " Plugin 'lambdalisue/vim-fullscreen'
 " Plugin 'vim-airline/vim-airline'
 " Plugin 'rust-lang/rust.vim'
@@ -50,6 +53,7 @@ set nowrap
 set t_Co=256
 set ignorecase
 set incsearch
+set backspace=indent,start,eol
 " set colorcolumn=79
 
 set shell=/usr/bin/env\ bash
@@ -63,20 +67,21 @@ set undolevels=1000
 set undoreload=10000
 
 " import powerline
-python import vim
-python from powerline.vim import setup
-python setup()
-python del setup
+" python import vim
+" python from powerline.vim import setup
+" python setup()
+" python del setup
 
-" start NERDTree whever we open vim
-autocmd VimEnter * NERDTree
-
-" close NERDTree if we don't have a buffer open (apart from the nerdtree
-" buffer itself)
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-" move the cursor to the file that we're editing
-autocmd VimEnter * wincmd p
+" ignore this whole block
+" " start NERDTree whever we open vim
+" autocmd VimEnter * NERDTree
+" 
+" " close NERDTree if we don't have a buffer open (apart from the nerdtree
+" " buffer itself)
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" 
+" " move the cursor to the file that we're editing
+" autocmd VimEnter * wincmd p
 
 " file types based on extensions
 au BufNewFile,BufRead *.hbs setfiletype html
